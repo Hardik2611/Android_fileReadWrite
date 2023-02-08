@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HardikGoyal_FileMB</string>
+    <string name="b1">Write</string>
+    <string name="b2">Read</string>
+    <string name="m1">Made by Hardik</string>
+    <string name="m2">Enter your text here</string>
+</resources>
