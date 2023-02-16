@@ -9,18 +9,15 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.w3c.dom.Text;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {
     EditText e;
     Button r,w;
-    TextView t,t1;
+    TextView t,t1, t2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +27,9 @@ public class MainActivity extends AppCompatActivity {
         r= findViewById(R.id.button3);
         w= findViewById(R.id.button);
         t= findViewById(R.id.textView);
-        t1.findViewById(R.id.textView2);
+        t1 = findViewById(R.id.textView2);
+        t2 = findViewById(R.id.textView3);
+
 
         w.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
                 String content = new String();
                 content = readFromFile("testMb.txt");
                 t.setText(content);
+                t2.setText(getApplicationContext().getFilesDir().toString());
             }
         });
 

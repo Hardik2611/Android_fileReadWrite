@@ -7,8 +7,8 @@ android {
 
     defaultConfig {
         applicationId "com.example.hardikgoyal_filemb"
-        minSdk 26
-        targetSdk 33
+        minSdk 21
+        targetSdk 32
         versionCode 1
         versionName "1.0"
 
